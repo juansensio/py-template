@@ -4,8 +4,6 @@ Template for a Python project with testing, documentation, publishing to pypi an
 
 ## Instructions
 
-To add a new python file to the documentation, add it in `doc/source/index.rst`.
-
 ```
 # build the docs
 make docum
