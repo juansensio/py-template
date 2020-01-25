@@ -40,4 +40,4 @@ To publish your module to pypi, you can run
 make pypi
 ```
 
-Make sure to change the name of your project, version, and all the required information in the `setup.py` file.
+Make sure to set the correct name of your project, version, and all the required information in the `setup.py` file.

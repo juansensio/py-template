@@ -19,6 +19,7 @@ os.mkdir(name)
 
 # copy template
 copyfile('tools/templates/template.py', f'{name}/template.py')
+copyfile('tools/templates/__init__.py', f'{name}/__init__.py')
 
 # create a folder for the tests
 os.mkdir('tests')

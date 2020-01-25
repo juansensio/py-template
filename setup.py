@@ -7,7 +7,7 @@ cmdclass = {'build_sphinx': BuildDoc}
 
 name = 'your-project-name-here'
 version = '0.0'
-release = '0.0.10'
+release = '0.0.0'
 author = 'The Author'
 description = 'your description here'
 email = 'theauthor@gmail.com'
