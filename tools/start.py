@@ -29,6 +29,10 @@ os.mkdir('.github')
 os.mkdir('.github/workflows')
 copyfile('tools/templates/main.yml', '.github/workflows/main.yml')
 
+# create some required folders for testing
+os.mkdir('sphinx/build')
+os.mkdir('sphinx/static/.templates')
+os.mkdir('sphinx/static/.static')
 
 # create a Makefile with all the tools
 makefile = f"""
