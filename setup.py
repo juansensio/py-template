@@ -7,11 +7,11 @@ cmdclass = {'build_sphinx': BuildDoc}
 
 name = 'mylibtemplate'
 version = '0.0'
-release = '0.0.6'
+release = '0.0.10'
 
 setuptools.setup(
     name=name,         # How you named your package folder (MyLib)
-    packages=[name],   # Chose the same as "name"
+    packages=setuptools.find_packages(),   # Chose the same as "name"
     version=release,      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
