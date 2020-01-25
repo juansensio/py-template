@@ -8,24 +8,23 @@ cmdclass = {'build_sphinx': BuildDoc}
 name = 'mylibtemplate'
 version = '0.0'
 release = '0.0.10'
+author = 'Juan Sensio'
+description = 'python template'
+email = 'juansensio03@gmail.com'
+url = 'https://github.com/juansensio/py-template'
+keywords = ['python', 'template']
 
 setuptools.setup(
-    name=name,         # How you named your package folder (MyLib)
-    packages=setuptools.find_packages(),   # Chose the same as "name"
-    version=release,      # Start with a small number and increase it with every change you make
-    # Chose a license from here: https://help.github.com/articles/licensing-a-repository
+    name=name,
+    packages=setuptools.find_packages(),
+    version=release,
     license='MIT',
-    # Give a short description about your library
-    description='python template',
-    author='Juan Sensio',                  # Type in your name
-    author_email='juansensio03@gmail.com',      # Type in your E-Mail
-    # Provide either the link to your github or to your website
-    url='https://github.com/juansensio/py-template',
-    # I explain this later on
-    # download_url='https://github.com/user/reponame/archive/v_01.tar.gz',
-    # Keywords that define your package best
-    keywords=['python', 'template'],
-    # install_requires=[            # I get to this in a second
+    description=description,
+    author=author,
+    author_email=email,
+    url=url,
+    keywords=keywords,
+    # install_requires=[
     #    'numpy',
     #    'pandas',
     # ],
@@ -50,5 +49,5 @@ setuptools.setup(
             'project': ('setup.py', name),
             'version': ('setup.py', version),
             'release': ('setup.py', release),
-            'source_dir': ('setup.py', 'doc/source')}}
+            'source_dir': ('setup.py', 'sphinx/source')}}
 )
