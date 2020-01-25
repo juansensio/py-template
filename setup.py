@@ -7,7 +7,7 @@ cmdclass = {'build_sphinx': BuildDoc}
 
 name = 'mylibtemplate'
 version = '0.0'
-release = '0.0.2'
+release = '0.0.6'
 
 setuptools.setup(
     name=name,         # How you named your package folder (MyLib)

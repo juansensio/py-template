@@ -20,6 +20,11 @@ file2
 .. automodule:: mylibtemplate.file2
    :members:
 
+file3
+===================
+.. automodule:: mylibtemplate.submodule.file3
+   :members:
+
 Indices and tables
 ==================
 

@@ -1,8 +1,8 @@
-class ClassC():
-    """ class c """
+class ClassD():
+    """ class d """
 
     def __init__(self):
-        self.name = "class C"
+        self.name = "class D"
 
     def sayHi(self):
         """ say hiss """
