@@ -1,8 +1,0 @@
-submodule
-===================
-
-file3
-----------------
-
-.. automodule:: mylibtemplate.submodule.file3
-   :members:
