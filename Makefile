@@ -6,3 +6,6 @@ dist: clean
 
 clean:
 	rm -rf dist
+
+docum: 
+	python setup.py build_sphinx --build-dir doc/build

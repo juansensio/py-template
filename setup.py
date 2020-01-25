@@ -1,12 +1,18 @@
 
+from sphinx.setup_command import BuildDoc
 from packaging.version import parse
 import setuptools
 assert parse(setuptools.__version__) >= parse('36.2')
+cmdclass = {'build_sphinx': BuildDoc}
+
+name = 'mylibtemplate'
+version = '0.0'
+release = '0.0.2'
 
 setuptools.setup(
-    name='mylibtemplate',         # How you named your package folder (MyLib)
-    packages=['mylibtemplate'],   # Chose the same as "name"
-    version='0.0.3',      # Start with a small number and increase it with every change you make
+    name=name,         # How you named your package folder (MyLib)
+    packages=[name],   # Chose the same as "name"
+    version=release,      # Start with a small number and increase it with every change you make
     # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     license='MIT',
     # Give a short description about your library
@@ -38,4 +44,11 @@ setuptools.setup(
     ],
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
+    cmdclass=cmdclass,
+    command_options={
+        'build_sphinx': {
+            'project': ('setup.py', name),
+            'version': ('setup.py', version),
+            'release': ('setup.py', release),
+            'source_dir': ('setup.py', 'doc/source')}}
 )

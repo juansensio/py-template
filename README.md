@@ -2,7 +2,7 @@
 
 Template for a Python project with testing, documentation and publishing to pypi.
 
-## Instruction
+## Instructions
 
 ```
 # upload package to pypi
