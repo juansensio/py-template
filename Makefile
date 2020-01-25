@@ -9,3 +9,5 @@ clean:
 
 docum: 
 	python setup.py build_sphinx --build-dir doc/build
+	rm -rf docs
+	mv doc/build/html docs
