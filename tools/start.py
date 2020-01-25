@@ -25,6 +25,7 @@ os.mkdir('tests')
 copyfile('tools/templates/example_test.py', 'tests/example_test.py')
 
 # set up github actions
+os.mkdir('.github')
 os.mkdir('.github/workflows')
 copyfile('tools/templates/main.yml', '.github/workflows/main.yml')
 
