@@ -20,11 +20,11 @@ Place your tests int the `tests` folders. Here, we use [unittest](https://docs.p
 make test
 ```
 
-Tests are automattically run when you push to master.
+Your tests should be named with the termiantion `_test.py` to be recognized as tests. You can have tests in subfolders, but you will need an `__init__.py` file for this to work. Tests run automattically when you push to master using Github actions.
 
 ### Documentation
 
-The documentation is generated automatically, looking for all the files inside your module and generating documentation from docstrings using [sphinx](http://www.sphinx-doc.org/en/master/). You can generate the documentation with
+The documentation is generated automatically, looking for all the files inside your library folder and generating documentation from docstrings using [sphinx](http://www.sphinx-doc.org/en/master/). You can generate the documentation with
 
 ```
 make docum
