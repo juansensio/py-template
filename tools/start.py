@@ -2,6 +2,7 @@
 
 import os
 import sys
+from shutil import copyfile
 
 
 def save(name, text):
@@ -15,6 +16,9 @@ name = sys.argv[1]
 
 # create a folder with the name of the library
 os.mkdir(name)
+
+# copy template
+copyfile('tools/templates/template.py', f'{name}/template.py')
 
 
 # create a Makefile with all the tools
