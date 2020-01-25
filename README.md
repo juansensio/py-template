@@ -1,8 +1,16 @@
 # py-template
 
-Template for a Python project with testing, documentation, publishing to pypi and continuous integration git github actions. Start your own project from this template clicking [here](https://github.com/juansensio/py-template/generate).
+Template for a Python project with testing, documentation, publishing to pypi and continuous integration with github actions. Start your own project from this template clicking [here](https://github.com/juansensio/py-template/generate).
 
 ## Instructions
+
+Once your new repository is created and cloned, you can start with the following command
+
+```
+python tools/start.py <your-project-name-here>
+```
+
+This will create the necessary files and folders to start working.
 
 ### Testing
 

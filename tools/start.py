@@ -20,6 +20,14 @@ os.mkdir(name)
 # copy template
 copyfile('tools/templates/template.py', f'{name}/template.py')
 
+# create a folder for the tests
+os.mkdir('tests')
+copyfile('tools/templates/example_test.py', 'tests/example_test.py')
+
+# set up github actions
+os.mkdir('.github/workflows')
+copyfile('tools/templates/main.yml', '.github/workflows/main.yml')
+
 
 # create a Makefile with all the tools
 makefile = f"""

@@ -5,14 +5,14 @@ import setuptools
 assert parse(setuptools.__version__) >= parse('36.2')
 cmdclass = {'build_sphinx': BuildDoc}
 
-name = 'mylibtemplate'
+name = 'your-project-name-here'
 version = '0.0'
 release = '0.0.10'
-author = 'Juan Sensio'
-description = 'python template'
-email = 'juansensio03@gmail.com'
-url = 'https://github.com/juansensio/py-template'
-keywords = ['python', 'template']
+author = 'The Author'
+description = 'your description here'
+email = 'theauthor@gmail.com'
+url = 'https://github.com/theauthor/repo-name'
+keywords = ['some', 'keywords', 'here']
 
 setuptools.setup(
     name=name,
