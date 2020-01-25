@@ -8,9 +8,10 @@ clean:
 	rm -rf dist
 
 docum: 
-	python setup.py build_sphinx --build-dir doc/build
+	python tools/rst.py mylibtemplate sphinx/source
+	python setup.py build_sphinx --build-dir sphinx/build
 	rm -rf docs
-	mv doc/build/html docs
+	mv sphinx/build/html docs
 
 test:
 	python -m unittest discover -s tests -p '*_test.py'
