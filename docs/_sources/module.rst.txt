@@ -1,0 +1,12 @@
+module
+===================
+
+file1
+----------------
+.. automodule:: mylibtemplate.file1
+   :members:
+
+file2
+----------------
+.. automodule:: mylibtemplate.file2
+   :members:

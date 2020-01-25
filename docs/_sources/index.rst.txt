@@ -3,27 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=========================================
 Welcome to mylibtemplate's documentation!
 =========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   :caption: Contents
 
-file1
-===================
-.. automodule:: mylibtemplate.file1
-   :members:
-
-file2
-===================
-.. automodule:: mylibtemplate.file2
-   :members:
-
-file3
-===================
-.. automodule:: mylibtemplate.submodule.file3
-   :members:
+   module
+   submodule
 
 Indices and tables
 ==================
